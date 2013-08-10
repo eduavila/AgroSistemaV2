@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="a56bf35bb5284326993978eff02187fa" Name="Diagram1">
+        <EntityTypeShape EntityType="AgroDBModel.Acesso" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="AgroDBModel.Aplicacao" Width="1.5" PointX="5.25" PointY="15.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="AgroDBModel.CentrodeCusto" Width="1.5" PointX="3" PointY="10.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="AgroDBModel.Cliente" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AgroDBModel.DocEntrada" Width="1.5" PointX="5.25" PointY="22.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="AgroDBModel.Estoque" Width="1.5" PointX="8.25" PointY="22.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="AgroDBModel.Fazenda" Width="1.5" PointX="0.75" PointY="13.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="AgroDBModel.Fornecedor" Width="1.5" PointX="3" PointY="29.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="AgroDBModel.Funcionario" Width="1.5" PointX="3" PointY="13.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="AgroDBModel.Implemento" Width="1.5" PointX="3" PointY="17.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="AgroDBModel.ProdDocEntrada" Width="1.5" PointX="5.25" PointY="11.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="AgroDBModel.ProdutoAplicacao" Width="1.5" PointX="7.5" PointY="16.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="AgroDBModel.Produto" Width="1.5" PointX="3" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="AgroDBModel.Safra" Width="1.5" PointX="3" PointY="22.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="AgroDBModel.sysdiagram" Width="1.5" PointX="5.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AgroDBModel.Talho" Width="1.5" PointX="3" PointY="26.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="AgroDBModel.Tipo_Produto" Width="1.5" PointX="0.75" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="AgroDBModel.UnidadeMedida" Width="1.5" PointX="0.75" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="AgroDBModel.Usuario" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
+        <AssociationConnector Association="AgroDBModel.FK_UsuariosAcesso" ManuallyRouted="false" />
+        <AssociationConnector Association="AgroDBModel.FK_AplicacaoProdutoAplicacao" ManuallyRouted="false" />
+        <AssociationConnector Association="AgroDBModel.FK_FazendasAplicacao" ManuallyRouted="false" />
+        <AssociationConnector Association="AgroDBModel.FK_ImplementosAplicacao" ManuallyRouted="false" />
+        <AssociationConnector Association="AgroDBModel.FK_CentrodeCustoProdDocEntrada" ManuallyRouted="false" />
+        <AssociationConnector Association="AgroDBModel.FK_FazendasCentrodeCusto" ManuallyRouted="false" />
+        <AssociationConnector Association="AgroDBModel.FK_DocEntradaProdDocEntrada" ManuallyRouted="false" />
+        <AssociationConnector Association="AgroDBModel.FK_FornecedorDocEntrada" ManuallyRouted="false" />
+        <AssociationConnector Association="AgroDBModel.FK_SafrasDocEntrada" ManuallyRouted="false" />
+        <AssociationConnector Association="AgroDBModel.FK_ProdutosEstoque" ManuallyRouted="false" />
+        <AssociationConnector Association="AgroDBModel.FK_SafrasEstoque" ManuallyRouted="false" />
+        <AssociationConnector Association="AgroDBModel.FK_FazendasFuncionarios" ManuallyRouted="false" />
+        <AssociationConnector Association="AgroDBModel.FK_FazendasImplementos" ManuallyRouted="false" />
+        <AssociationConnector Association="AgroDBModel.FK_FazendasProdDocEntrada" ManuallyRouted="false" />
+        <AssociationConnector Association="AgroDBModel.FK_FazendasSafras" ManuallyRouted="false" />
+        <AssociationConnector Association="AgroDBModel.FK_FazendasTalhoes" ManuallyRouted="false" />
+        <AssociationConnector Association="AgroDBModel.FK_ProdutosProdDocEntrada" ManuallyRouted="false" />
+        <AssociationConnector Association="AgroDBModel.FK_Tipo_ProdutoProdutos" ManuallyRouted="false" />
+        <AssociationConnector Association="AgroDBModel.FK_UnidadeMedidasProdutos" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

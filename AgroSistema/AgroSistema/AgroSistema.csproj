@@ -70,6 +70,42 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Acesso.cs">
+      <DependentUpon>AgroDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AgroDBModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AgroDBModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AgroDBModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AgroDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AgroDBModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AgroDBModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Aplicacao.cs">
+      <DependentUpon>AgroDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CentrodeCusto.cs">
+      <DependentUpon>AgroDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Cliente.cs">
+      <DependentUpon>AgroDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DocEntrada.cs">
+      <DependentUpon>AgroDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Estoque.cs">
+      <DependentUpon>AgroDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Fazenda.cs">
+      <DependentUpon>AgroDBModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Forms\splash\FormSplash.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,6 +129,12 @@
     </Compile>
     <Compile Include="Forms\TelaFazenda\FormFazenda.Designer.cs">
       <DependentUpon>FormFazenda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TelaFuncionario\FormCadastroFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TelaFuncionario\FormCadastroFuncionario.Designer.cs">
+      <DependentUpon>FormCadastroFuncionario.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\TelaFuncionario\FormFuncionario.cs">
       <SubType>Form</SubType>
@@ -118,80 +160,44 @@
     <Compile Include="Forms\TelaUsuario\FormUsuario.Designer.cs">
       <DependentUpon>FormUsuario.cs</DependentUpon>
     </Compile>
-    <Compile Include="Model\Acesso.cs">
+    <Compile Include="Fornecedor.cs">
       <DependentUpon>AgroDBModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Model\AgroDBModel.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>AgroDBModel.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Model\AgroDBModel.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
+    <Compile Include="Funcionario.cs">
       <DependentUpon>AgroDBModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Model\AgroDBModel.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>AgroDBModel.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="Model\Aplicacao.cs">
+    <Compile Include="Implemento.cs">
       <DependentUpon>AgroDBModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Model\CentrodeCusto.cs">
+    <Compile Include="ProdDocEntrada.cs">
       <DependentUpon>AgroDBModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Model\Cliente.cs">
+    <Compile Include="Produto.cs">
       <DependentUpon>AgroDBModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Model\DocEntrada.cs">
-      <DependentUpon>AgroDBModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Model\Estoque.cs">
-      <DependentUpon>AgroDBModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Model\Fazenda.cs">
-      <DependentUpon>AgroDBModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Model\Fornecedor.cs">
-      <DependentUpon>AgroDBModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Model\Funcionario.cs">
-      <DependentUpon>AgroDBModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Model\Implemento.cs">
-      <DependentUpon>AgroDBModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Model\ProdDocEntrada.cs">
-      <DependentUpon>AgroDBModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Model\Produto.cs">
-      <DependentUpon>AgroDBModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Model\ProdutoAplicacao.cs">
-      <DependentUpon>AgroDBModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Model\Safra.cs">
-      <DependentUpon>AgroDBModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Model\sysdiagram.cs">
-      <DependentUpon>AgroDBModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Model\Talho.cs">
-      <DependentUpon>AgroDBModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Model\Tipo_Produto.cs">
-      <DependentUpon>AgroDBModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Model\UnidadeMedida.cs">
-      <DependentUpon>AgroDBModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Model\Usuario.cs">
+    <Compile Include="ProdutoAplicacao.cs">
       <DependentUpon>AgroDBModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Safra.cs">
+      <DependentUpon>AgroDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sysdiagram.cs">
+      <DependentUpon>AgroDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Talho.cs">
+      <DependentUpon>AgroDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Tipo_Produto.cs">
+      <DependentUpon>AgroDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UnidadeMedida.cs">
+      <DependentUpon>AgroDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Usuario.cs">
+      <DependentUpon>AgroDBModel.tt</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Forms\splash\FormSplash.resx">
       <DependentUpon>FormSplash.cs</DependentUpon>
     </EmbeddedResource>
@@ -203,6 +209,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\TelaFazenda\FormFazenda.resx">
       <DependentUpon>FormFazenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TelaFuncionario\FormCadastroFuncionario.resx">
+      <DependentUpon>FormCadastroFuncionario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\TelaFuncionario\FormFuncionario.resx">
       <DependentUpon>FormFuncionario.cs</DependentUpon>
@@ -221,44 +230,45 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EntityDeploy Include="Model\AgroDBModel.edmx">
+    <EntityDeploy Include="AgroDBModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>AgroDBModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="Model\AgroDBModel.Context.tt">
+    <None Include="AgroDBModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>AgroDBModel.edmx</DependentUpon>
       <LastGenOutput>AgroDBModel.Context.cs</LastGenOutput>
     </None>
-    <None Include="Model\AgroDBModel.edmx.diagram">
+    <None Include="AgroDBModel.edmx.diagram">
       <DependentUpon>AgroDBModel.edmx</DependentUpon>
     </None>
-    <None Include="Model\AgroDBModel.tt">
+    <None Include="AgroDBModel.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>AgroDBModel.edmx</DependentUpon>
       <LastGenOutput>AgroDBModel.cs</LastGenOutput>
     </None>
     <None Include="packages.config" />
-    <None Include="Properties\DataSources\AgroSistema.Model.Acesso.datasource" />
-    <None Include="Properties\DataSources\AgroSistema.Model.AgroDBEntities1.datasource" />
-    <None Include="Properties\DataSources\AgroSistema.Model.Aplicacao.datasource" />
-    <None Include="Properties\DataSources\AgroSistema.Model.CentrodeCusto.datasource" />
-    <None Include="Properties\DataSources\AgroSistema.Model.Cliente.datasource" />
-    <None Include="Properties\DataSources\AgroSistema.Model.DocEntrada.datasource" />
-    <None Include="Properties\DataSources\AgroSistema.Model.Estoque.datasource" />
-    <None Include="Properties\DataSources\AgroSistema.Model.Fazenda.datasource" />
-    <None Include="Properties\DataSources\AgroSistema.Model.Fornecedor.datasource" />
-    <None Include="Properties\DataSources\AgroSistema.Model.Funcionario.datasource" />
-    <None Include="Properties\DataSources\AgroSistema.Model.Implemento.datasource" />
-    <None Include="Properties\DataSources\AgroSistema.Model.ProdDocEntrada.datasource" />
-    <None Include="Properties\DataSources\AgroSistema.Model.Produto.datasource" />
-    <None Include="Properties\DataSources\AgroSistema.Model.ProdutoAplicacao.datasource" />
-    <None Include="Properties\DataSources\AgroSistema.Model.Safra.datasource" />
-    <None Include="Properties\DataSources\AgroSistema.Model.sysdiagram.datasource" />
-    <None Include="Properties\DataSources\AgroSistema.Model.Talho.datasource" />
-    <None Include="Properties\DataSources\AgroSistema.Model.Tipo_Produto.datasource" />
-    <None Include="Properties\DataSources\AgroSistema.Model.UnidadeMedida.datasource" />
-    <None Include="Properties\DataSources\AgroSistema.Model.Usuario.datasource" />
+    <None Include="Properties\DataSources\Acesso.datasource" />
+    <None Include="Properties\DataSources\AgroDBEntities1.datasource" />
+    <None Include="Properties\DataSources\Aplicacao.datasource" />
+    <None Include="Properties\DataSources\CentrodeCusto.datasource" />
+    <None Include="Properties\DataSources\Cliente.datasource" />
+    <None Include="Properties\DataSources\DocEntrada.datasource" />
+    <None Include="Properties\DataSources\Estoque.datasource" />
+    <None Include="Properties\DataSources\Fazenda.datasource" />
+    <None Include="Properties\DataSources\Fornecedor.datasource" />
+    <None Include="Properties\DataSources\Funcionario.datasource" />
+    <None Include="Properties\DataSources\Implemento.datasource" />
+    <None Include="Properties\DataSources\ProdDocEntrada.datasource" />
+    <None Include="Properties\DataSources\Produto.datasource" />
+    <None Include="Properties\DataSources\ProdutoAplicacao.datasource" />
+    <None Include="Properties\DataSources\Program.datasource" />
+    <None Include="Properties\DataSources\Safra.datasource" />
+    <None Include="Properties\DataSources\sysdiagram.datasource" />
+    <None Include="Properties\DataSources\Talho.datasource" />
+    <None Include="Properties\DataSources\Tipo_Produto.datasource" />
+    <None Include="Properties\DataSources\UnidadeMedida.datasource" />
+    <None Include="Properties\DataSources\Usuario.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -325,7 +335,7 @@
     <None Include="Resources\add224.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Model\AgroDBModel.edmx.sql" />
+    <Content Include="AgroDBModel.edmx.sql" />
     <Content Include="SQL.sql" />
   </ItemGroup>
   <ItemGroup />

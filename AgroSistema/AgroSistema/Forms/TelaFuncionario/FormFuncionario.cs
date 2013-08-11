@@ -1,4 +1,4 @@
-﻿using AgroSistema.Model;
+﻿
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -53,8 +53,8 @@ namespace AgroSistema.Forms.TelaFuncionario
 
         private void btn_novo_Click(object sender, EventArgs e)
         {
-        //    FormCadastroFuncionario cadastrofuncionario =new FormCadastroFuncionario(_fazenda);
-        //    cadastrofuncionario.ShowDialog();
+            FormCadastroFuncionario cadastrofuncionario = new FormCadastroFuncionario(_fazenda.Id);
+            cadastrofuncionario.ShowDialog();
         }
     }
 }

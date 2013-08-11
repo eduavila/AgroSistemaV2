@@ -232,7 +232,7 @@
             // 
             // funcionarioBindingSource
             // 
-            this.funcionarioBindingSource.DataSource = typeof(AgroSistema.Model.Funcionario);
+            this.funcionarioBindingSource.DataSource = typeof(AgroSistema.Funcionario);
             // 
             // FormFuncionario
             // 

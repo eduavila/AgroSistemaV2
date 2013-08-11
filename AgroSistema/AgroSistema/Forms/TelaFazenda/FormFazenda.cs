@@ -8,7 +8,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using AgroSistema.Forms.TelaPrincipal;
-using AgroSistema.Model;
 using System.Data.Entity;
 using System.Data.EntityClient;
 

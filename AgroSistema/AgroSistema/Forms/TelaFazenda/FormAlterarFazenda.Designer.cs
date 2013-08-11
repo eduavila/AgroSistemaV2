@@ -250,7 +250,7 @@
             // 
             // fazendaBindingSource
             // 
-            this.fazendaBindingSource.DataSource = typeof(AgroSistema.Model.Fazenda);
+            this.fazendaBindingSource.DataSource = typeof(AgroSistema.Fazenda);
             // 
             // iEMaskedTextBox
             // 

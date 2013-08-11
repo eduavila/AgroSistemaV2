@@ -9,7 +9,6 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.Entity;
 using System.Data.EntityClient;
-using AgroSistema.Model;
 using AgroSistema.Forms.TelaPrincipal;
 using AgroSistema.Forms.TelaSelecao;
 namespace AgroSistema.Forms.TelaUsuario

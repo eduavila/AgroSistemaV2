@@ -7,9 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using AgroSistema.Model;
 using System.Data.Entity;
 using System.Data.EntityClient;
+using AgroSistema.Forms.TelaFazenda;
 
 namespace AgroSistema.Forms.TelaSelecao
 {
@@ -42,6 +42,12 @@ namespace AgroSistema.Forms.TelaSelecao
             // carrega dados do banco no grid
             CarregandoGrid();
 
+            if (_context.Fazendas.Count() == 0)
+            {
+                Application.Exit();
+            
+            }
+
 
         }
 
@@ -53,7 +59,17 @@ namespace AgroSistema.Forms.TelaSelecao
             {
                 _context = new AgroDBEntities1();
 
-                fazendaBindingSource.DataSource = _context.Fazendas.ToList();
+                if (_context.Fazendas.Count() == 0)
+                {
+                    MessageBox.Show("Não contém nenhuma fazenda cadastrada.");
+                    FormCadastroFazenda cadastrofazenda = new FormCadastroFazenda();
+                    cadastrofazenda.ShowDialog();
+                    fazendaBindingSource.DataSource = _context.Fazendas.ToList();
+                }
+                else
+                {
+                    fazendaBindingSource.DataSource = _context.Fazendas.ToList();
+                }
             }
             catch (Exception erro)
             {

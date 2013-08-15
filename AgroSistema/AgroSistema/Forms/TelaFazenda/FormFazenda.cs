@@ -25,8 +25,7 @@ namespace AgroSistema.Forms.TelaFazenda
             InitializeComponent();
 
 
-            this.Width = 493;
-            this.Height = 360;
+         
             
 
             //position
@@ -73,15 +72,24 @@ namespace AgroSistema.Forms.TelaFazenda
 
             try
             {
-                // remove intens selecionado.
-                fazendaBindingSource.RemoveCurrent();
-                _context.Fazendas.Remove((Fazenda)fazendaBindingSource.Current);
-                 // salva auterações no banco.
-                _context.SaveChanges();
+              
+
+                var result =  MessageBox.Show("Tem certeza que deseja excluir o registro selecionado?", "Excluir Registro", MessageBoxButtons.YesNo,MessageBoxIcon.Warning);
 
 
-                MessageBox.Show("Registro Excluido com Sucesso ", "Excluido", MessageBoxButtons.OK, MessageBoxIcon.Information);
-           
+
+                if (result == DialogResult.Yes)
+                {
+
+
+                    
+                    _context.Fazendas.Remove((Fazenda)fazendaBindingSource.Current);
+                    // salva auterações no banco.
+                    _context.SaveChanges();
+
+
+                    MessageBox.Show("Registro Excluido com Sucesso ", "Excluido", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
             }
             catch (Exception erro)
             {

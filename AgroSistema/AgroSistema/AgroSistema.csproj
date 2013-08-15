@@ -130,6 +130,24 @@
     <Compile Include="Forms\TelaFazenda\FormFazenda.Designer.cs">
       <DependentUpon>FormFazenda.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\TelaFornecedor\FormAlterarFornecedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TelaFornecedor\FormAlterarFornecedor.Designer.cs">
+      <DependentUpon>FormAlterarFornecedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TelaFornecedor\FormCadastroFornecedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TelaFornecedor\FormCadastroFornecedor.Designer.cs">
+      <DependentUpon>FormCadastroFornecedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TelaFornecedor\FormFornecedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TelaFornecedor\FormFornecedor.Designer.cs">
+      <DependentUpon>FormFornecedor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\TelaFuncionario\FormCadastroFuncionario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -209,6 +227,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\TelaFazenda\FormFazenda.resx">
       <DependentUpon>FormFazenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TelaFornecedor\FormAlterarFornecedor.resx">
+      <DependentUpon>FormAlterarFornecedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TelaFornecedor\FormCadastroFornecedor.resx">
+      <DependentUpon>FormCadastroFornecedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TelaFornecedor\FormFornecedor.resx">
+      <DependentUpon>FormFornecedor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\TelaFuncionario\FormCadastroFuncionario.resx">
       <DependentUpon>FormCadastroFuncionario.cs</DependentUpon>

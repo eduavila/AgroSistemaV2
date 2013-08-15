@@ -1,7 +1,7 @@
 ﻿using AgroSistema.Forms.TelaFazenda;
+using AgroSistema.Forms.TelaFornecedor;
 using AgroSistema.Forms.TelaFuncionario;
 using AgroSistema.Forms.TelaUsuario;
-
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -79,6 +79,11 @@ namespace AgroSistema.Forms.TelaPrincipal
         private void funcionárioToolStripMenuItem_Click(object sender, EventArgs e)
         {
             AbrirTelasMDI(new FormFuncionario(_fazenda));
+        }
+
+        private void fornecedorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirTelasMDI(new FormFornecedor());
         }
     }
 }

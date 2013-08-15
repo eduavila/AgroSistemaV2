@@ -160,6 +160,18 @@
     <Compile Include="Forms\TelaFuncionario\FormFuncionario.Designer.cs">
       <DependentUpon>FormFuncionario.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\TelaPradrao\FormCadastroPadrao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TelaPradrao\FormCadastroPadrao.Designer.cs">
+      <DependentUpon>FormCadastroPadrao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TelaPradrao\TelaPadrao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TelaPradrao\TelaPadrao.Designer.cs">
+      <DependentUpon>TelaPadrao.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\TelaPrincipal\FormPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -171,6 +183,24 @@
     </Compile>
     <Compile Include="Forms\TelaSelecao\FormSelecaoFazenda.Designer.cs">
       <DependentUpon>FormSelecaoFazenda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TelaTipodeProduto\FormAlterarTipodeProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TelaTipodeProduto\FormAlterarTipodeProduto.Designer.cs">
+      <DependentUpon>FormAlterarTipodeProduto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TelaTipodeProduto\FormCadastroTipodeProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TelaTipodeProduto\FormCadastroTipodeProduto.Designer.cs">
+      <DependentUpon>FormCadastroTipodeProduto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TelaTipodeProduto\FormTipodeProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TelaTipodeProduto\FormTipodeProduto.Designer.cs">
+      <DependentUpon>FormTipodeProduto.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\TelaUsuario\FormUsuario.cs">
       <SubType>Form</SubType>
@@ -243,11 +273,26 @@
     <EmbeddedResource Include="Forms\TelaFuncionario\FormFuncionario.resx">
       <DependentUpon>FormFuncionario.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TelaPradrao\FormCadastroPadrao.resx">
+      <DependentUpon>FormCadastroPadrao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TelaPradrao\TelaPadrao.resx">
+      <DependentUpon>TelaPadrao.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\TelaPrincipal\FormPrincipal.resx">
       <DependentUpon>FormPrincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\TelaSelecao\FormSelecaoFazenda.resx">
       <DependentUpon>FormSelecaoFazenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TelaTipodeProduto\FormAlterarTipodeProduto.resx">
+      <DependentUpon>FormAlterarTipodeProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TelaTipodeProduto\FormCadastroTipodeProduto.resx">
+      <DependentUpon>FormCadastroTipodeProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TelaTipodeProduto\FormTipodeProduto.resx">
+      <DependentUpon>FormTipodeProduto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\TelaUsuario\FormUsuario.resx">
       <DependentUpon>FormUsuario.cs</DependentUpon>

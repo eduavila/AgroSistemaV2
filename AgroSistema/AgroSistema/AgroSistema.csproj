@@ -202,6 +202,24 @@
     <Compile Include="Forms\TelaTipodeProduto\FormTipodeProduto.Designer.cs">
       <DependentUpon>FormTipodeProduto.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\TelaUnidadeMedida\FormAlterarUnidadeMedida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TelaUnidadeMedida\FormAlterarUnidadeMedida.Designer.cs">
+      <DependentUpon>FormAlterarUnidadeMedida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TelaUnidadeMedida\FormCadastraUnidadeMedida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TelaUnidadeMedida\FormCadastraUnidadeMedida.Designer.cs">
+      <DependentUpon>FormCadastraUnidadeMedida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TelaUnidadeMedida\FormUnidadeMedida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TelaUnidadeMedida\FormUnidadeMedida.Designer.cs">
+      <DependentUpon>FormUnidadeMedida.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\TelaUsuario\FormUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -293,6 +311,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\TelaTipodeProduto\FormTipodeProduto.resx">
       <DependentUpon>FormTipodeProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TelaUnidadeMedida\FormAlterarUnidadeMedida.resx">
+      <DependentUpon>FormAlterarUnidadeMedida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TelaUnidadeMedida\FormCadastraUnidadeMedida.resx">
+      <DependentUpon>FormCadastraUnidadeMedida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TelaUnidadeMedida\FormUnidadeMedida.resx">
+      <DependentUpon>FormUnidadeMedida.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\TelaUsuario\FormUsuario.resx">
       <DependentUpon>FormUsuario.cs</DependentUpon>

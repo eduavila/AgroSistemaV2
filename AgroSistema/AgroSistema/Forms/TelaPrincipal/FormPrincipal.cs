@@ -2,6 +2,7 @@
 using AgroSistema.Forms.TelaFornecedor;
 using AgroSistema.Forms.TelaFuncionario;
 using AgroSistema.Forms.TelaTipodeProduto;
+using AgroSistema.Forms.TelaUnidadeMedida;
 using AgroSistema.Forms.TelaUsuario;
 using System;
 using System.Collections.Generic;
@@ -90,6 +91,13 @@ namespace AgroSistema.Forms.TelaPrincipal
         private void tipoDeProdutoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             AbrirTelasMDI(new FormTipodeProduto());
+        }
+
+        private void unidadeMedidaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+             //cadastro unidade medida
+
+            AbrirTelasMDI(new FormUnidadeMedida());
         }
     }
 }
